@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="rating" content="adult">
+<title>Perfil · ConectaOJob</title><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<script src="assets/app.js"></script></head>
+<body data-base="">
+<header class="top"><div class="wrap"><a class="logo" href="index.html">Conecta<span class="o">O</span><span class="j">J</span>ob</a>
+<nav><a href="index.html">Catálogo</a><a href="planos.html">Planos</a><a href="educacao.html">Educação</a><a href="blog/index.html">Blog</a><a href="compliance.html">Compliance</a></nav></div></header>
+<main class="wrap"><section id="perfil"><p>Carregando…</p></section></main>
+<div class="modal" id="paywall" onclick="if(event.target===this)closePaywall()"><div class="box"><h2 style="border:0;padding:0">🔒 Recurso Premium</h2>
+<p>Busca avançada e fotos exclusivas fazem parte do acesso <b>Premium</b>. A primeira assinatura tem <b>24 horas grátis</b>.</p>
+<p class="note">Protótipo: nenhum pagamento é processado aqui.</p>
+<p><a class="btn" href="planos.html#premium">Ver planos Premium</a></p><p><button class="btn ghost" onclick="closePaywall()">Agora não</button></p></div></div>
+<footer><div class="wrap">
+<p><b>Site exclusivo para maiores de 18 anos.</b> A ConectaOJob é uma plataforma de anúncios classificados. Ela não agencia, não intermedeia e não se responsabiliza pelos serviços anunciados, que são de responsabilidade exclusiva de cada anunciante. É proibido qualquer conteúdo envolvendo menores de 18 anos, exploração sexual ou tráfico de pessoas: denuncie pelo botão "Denunciar", pelo <b>Disque 100</b> (gratuito, anônimo, 24h) ou na <b>SaferNet</b> em <a href="https://new.safernet.org.br/denuncie" rel="noopener">denuncie.org.br</a>. Polícia: 190 · Central da Mulher: 180. Dados pessoais tratados conforme a LGPD (Lei 13.709/2018).</p>
+<p><a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a></p>
+<p class="credit">Proposta de Oliveira Airwin<br>© 2026 ConectaOJob · Todos os direitos reservados a Tiê de Oliveira Hardoim</p></div></footer><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+(async()=>{const d=await loadAnuncios('');const id=new URLSearchParams(location.search).get('id')||d.anuncios[0].id;const a=d.anuncios.find(x=>x.id===id)||d.anuncios[0];
+document.title=a.nome+' · ConectaOJob';
+document.getElementById('perfil').innerHTML=`<p><a href="index.html">← Catálogo</a></p><h1>${a.nome}, ${a.idade} <span class="badge plan" style="position:static">${a.plano}</span></h1>
+<p class="meta">${a.bairro}, ${a.cidade}/${a.uf} · ${vistoTxt(a.visto_ha_min)} · ⏱ tempo médio de resposta: ~${a.tempo_resposta_min} min</p>
+<p>${a.verificado.identidade?'<span class="badge">✔ Identidade verificada</span>':'<span class="badge no">Verificação pendente</span>'}${a.verificado.fotos?'<span class="badge">✔ Fotos conferidas</span>':''}${a.verificado.escolaridade?'<span class="badge">🎓 Escolaridade comprovada</span>':''}</p>
+<p>${a.bio}</p><p><b>Valor de referência:</b> ${a.valor_referencia}</p>
+<div class="media"><div><h2>Fotos</h2><div class="sqgrid">${a.fotos.map(f=>`<img src="${f}" alt="Foto de teste (perfil fictício)">`).join('')}</div></div>
+<div><h2>Vídeos</h2><div class="vcol">${(a.videos||[]).map(v=>`<div class="vtile" role="img" aria-label="${v.titulo}"><span class="play">▶</span><small>${v.duracao}</small></div>`).join('')}</div></div></div>
+<!-- TODO: música do perfil — definir fonte licenciada, botão de play/pause e respeitar autoplay (sem autoplay com som). -->
+<audio id="perfil-musica" hidden preload="none"></audio>
+<h2>Fotos exclusivas 🔒</h2><div class="lockwrap"><div class="sqgrid blur">${Array.from({length:a.fotos_exclusivas},(_,i)=>`<img src="${a.fotos[i%2]}" alt="">`).join('')}</div><div class="lockbtn" onclick="openPaywall()">🔒 ${a.fotos_exclusivas} fotos exclusivas · Premium</div></div>
+<h2>Verificação</h2><div class="verif">
+<div class="vthumb"><div class="vph" role="img" aria-label="Foto de verificação privada (placeholder)">🔒<br>Foto privada</div>
+${a.verif_corpo?'<span class="badge">✔ Foto de verificação</span><p class="meta">Verificado por foto corporal · rosto preservado</p>':'<span class="badge no">Foto de verificação pendente</span>'}
+<p class="meta" style="font-size:12px">Foto só do corpo, sem rosto, com gesto ou código do dia. Comprova que as fotos do anúncio são reais. Visível apenas para a equipe.</p></div>
+<div class="vloc"><p><b>📍 ${a.bairro}</b>, ${a.cidade}/${a.uf}</p><div id="map"></div>
+<p class="meta">${a.local_verificado_em?'Localização aproximada · verificada em '+a.local_verificado_em.slice(8,10)+'/'+a.local_verificado_em.slice(5,7):'Localização aproximada · verificação pendente'} (raio de ~${(a.area_aproximada.raio_m/1000).toFixed(1)} km). Nunca mostramos endereço exato.</p></div></div>
+<p style="margin-top:16px"><button class="btn" onclick="alert('Protótipo: o contato será liberado após o backend.')">Entrar em contato</button> <button class="btn ghost" onclick="alert('Protótipo: denúncia registrada (simulação). Em caso de crime: Disque 100, 190 ou denuncie.org.br.')">⚠ Denunciar</button></p>`;
+const c=a.area_aproximada;const m=L.map('map',{scrollWheelZoom:false}).setView([c.lat,c.lng],13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:15,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(m);
+L.circle([c.lat,c.lng],{radius:c.raio_m,color:'#ff2d6a',fillColor:'#ff2d6a',fillOpacity:.25}).addTo(m).bindPopup('Região aproximada: '+a.bairro);})();
+</script>
+</body></html>

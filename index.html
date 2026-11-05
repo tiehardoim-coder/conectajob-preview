@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><meta name="rating" content="adult">
+<title>Catálogo Campo Grande · ConectaOJob</title><link rel="stylesheet" href="assets/style.css">
+<script src="assets/app.js"></script></head>
+<body data-base="">
+<header class="top"><div class="wrap"><a class="logo" href="index.html">Conecta<span class="o">O</span><span class="j">J</span>ob</a>
+<nav><a href="index.html">Catálogo</a><a href="planos.html">Planos</a><a href="educacao.html">Educação</a><a href="blog/index.html">Blog</a><a href="compliance.html">Compliance</a></nav></div></header>
+<main class="wrap">
+<section class="hero"><p class="slogan">Diga sim ao job</p><h1>Campo Grande em um só lugar.</h1>
+<p>Perfis verificados, quem está online agora e quem responde rápido. Navegue grátis.</p>
+<p><a class="btn" href="#catalogo">Explorar Campo Grande</a> <a class="btn ghost" href="planos.html">Anunciar agora</a></p></section>
+<section id="catalogo"><h2>Catálogo por cidade</h2>
+<div class="filters"><select id="cidade" aria-label="Cidade"></select><select id="bairro" aria-label="Bairro"><option value="">Todos os bairros</option></select>
+<label><input type="checkbox" id="soVerif"> Só verificados</label>
+<div class="lockwrap"><div class="lock"><input placeholder="Busca avançada: idade, valor, tempo de resposta…" size="34"></div><div class="lockbtn" onclick="openPaywall()">🔒 Busca avançada · Premium</div></div></div>
+<p class="note">Todos os perfis exibidos são <b>fictícios</b> (dados de demonstração em data/anuncios.json). Imagens de teste com marca d'água.</p>
+<div class="grid" id="lista"></div></section>
+<section><h2>Por que a ConectaOJob</h2><ul>
+<li><b>Selos de verificação:</b> identidade, fotos e escolaridade conferidas.</li><li><b>Última vez visto</b> e <b>tempo médio de resposta</b> em cada anúncio.</li>
+<li><b>Mapa por região:</b> só a área aproximada, nunca o endereço.</li><li><b>Oportunidade fora do anúncio:</b> <a href="educacao.html">educação e compromisso social</a>.</li></ul></section></main>
+<div class="modal" id="paywall" onclick="if(event.target===this)closePaywall()"><div class="box"><h2 style="border:0;padding:0">🔒 Recurso Premium</h2>
+<p>Busca avançada e fotos exclusivas fazem parte do acesso <b>Premium</b>. A primeira assinatura tem <b>24 horas grátis</b>.</p>
+<p class="note">Protótipo: nenhum pagamento é processado aqui.</p>
+<p><a class="btn" href="planos.html#premium">Ver planos Premium</a></p><p><button class="btn ghost" onclick="closePaywall()">Agora não</button></p></div></div>
+<footer><div class="wrap">
+<p><b>Site exclusivo para maiores de 18 anos.</b> A ConectaOJob é uma plataforma de anúncios classificados. Ela não agencia, não intermedeia e não se responsabiliza pelos serviços anunciados, que são de responsabilidade exclusiva de cada anunciante. É proibido qualquer conteúdo envolvendo menores de 18 anos, exploração sexual ou tráfico de pessoas: denuncie pelo botão "Denunciar", pelo <b>Disque 100</b> (gratuito, anônimo, 24h) ou na <b>SaferNet</b> em <a href="https://new.safernet.org.br/denuncie" rel="noopener">denuncie.org.br</a>. Polícia: 190 · Central da Mulher: 180. Dados pessoais tratados conforme a LGPD (Lei 13.709/2018).</p>
+<p><a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a></p>
+<p class="credit">Proposta de Oliveira Airwin<br>© 2026 ConectaOJob · Todos os direitos reservados a Tiê de Oliveira Hardoim</p></div></footer>
+<script>
+(async()=>{const d=await loadAnuncios('');const cid=document.getElementById('cidade'),bai=document.getElementById('bairro'),sv=document.getElementById('soVerif'),L=document.getElementById('lista');
+d.cidades.forEach(c=>cid.insertAdjacentHTML('beforeend',`<option value="${c.nome}" ${c.ativa?'':'disabled'}>${c.nome}/${c.uf}${c.ativa?'':' (em breve)'}</option>`));
+[...new Set(d.anuncios.map(a=>a.bairro))].sort().forEach(b=>bai.insertAdjacentHTML('beforeend',`<option>${b}</option>`));
+const ord={"Diamante":0,"Super Top":1,"Top":2,"Grátis 24h":3};
+function render(){L.innerHTML='';d.anuncios.filter(a=>a.cidade===cid.value&&(!bai.value||a.bairro===bai.value)&&(!sv.checked||a.verificado.identidade)).sort((a,b)=>ord[a.plano]-ord[b.plano]).forEach(a=>{
+L.insertAdjacentHTML('beforeend',`<a class="card" href="perfil.html?id=${a.id}"><div class="ph" style="background-image:url('${a.fotos[0]}')"><span class="badge plan">${a.plano}</span></div><div class="body"><h3>${a.nome}, ${a.idade}</h3><div class="meta">${a.bairro} · ${vistoTxt(a.visto_ha_min)}</div><div class="meta">⏱ responde em ~${a.tempo_resposta_min} min</div>
+${a.verificado.identidade?'<span class="badge">✔ Identidade verificada</span>':'<span class="badge no">Verificação pendente</span>'}${a.verificado.fotos?'<span class="badge">✔ Fotos</span>':''}${a.verificado.escolaridade?'<span class="badge">🎓 Escolaridade</span>':''}</div></a>`);});}
+[cid,bai,sv].forEach(e=>e.onchange=render);render();})();
+</script>
+</body></html>
