@@ -1,0 +1,559 @@
+{
+ "_aviso": "DADOS FICTÍCIOS — protótipo. Nenhuma pessoa real.",
+ "cidades": [
+  {
+   "slug": "campo-grande",
+   "nome": "Campo Grande",
+   "uf": "MS",
+   "ativa": true
+  },
+  {
+   "slug": "dourados",
+   "nome": "Dourados",
+   "uf": "MS",
+   "ativa": false
+  },
+  {
+   "slug": "tres-lagoas",
+   "nome": "Três Lagoas",
+   "uf": "MS",
+   "ativa": false
+  }
+ ],
+ "anuncios": [
+  {
+   "id": "perfil-01",
+   "nome": "Luna (fictícia)",
+   "idade": 31,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Centro",
+   "area_aproximada": {
+    "lat": -20.4592,
+    "lng": -54.6167,
+    "raio_m": 1500
+   },
+   "plano": "Diamante",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": true
+   },
+   "visto_ha_min": 1,
+   "tempo_resposta_min": 2,
+   "valor_referencia": "R$ 150/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-04",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-02",
+   "nome": "Bia (fictícia)",
+   "idade": 32,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Jardim dos Estados",
+   "area_aproximada": {
+    "lat": -20.4553,
+    "lng": -54.5957,
+    "raio_m": 1500
+   },
+   "plano": "Super Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 15,
+   "tempo_resposta_min": 2,
+   "valor_referencia": "R$ 150/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-03",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  },
+  {
+   "id": "perfil-03",
+   "nome": "Sofia (fictícia)",
+   "idade": 34,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Carandá Bosque",
+   "area_aproximada": {
+    "lat": -20.4447,
+    "lng": -54.5891,
+    "raio_m": 1500
+   },
+   "plano": "Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": false,
+    "escolaridade": false
+   },
+   "visto_ha_min": 90,
+   "tempo_resposta_min": 2,
+   "valor_referencia": "R$ 150/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": false,
+   "local_verificado_em": null,
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-04",
+   "nome": "Mel (fictícia)",
+   "idade": 28,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Chácara Cachoeira",
+   "area_aproximada": {
+    "lat": -20.438,
+    "lng": -54.5743,
+    "raio_m": 1500
+   },
+   "plano": "Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 1,
+   "tempo_resposta_min": 30,
+   "valor_referencia": "R$ 300/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-01",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  },
+  {
+   "id": "perfil-05",
+   "nome": "Nina (fictícia)",
+   "idade": 22,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Tiradentes",
+   "area_aproximada": {
+    "lat": -20.4662,
+    "lng": -54.5836,
+    "raio_m": 1500
+   },
+   "plano": "Grátis 24h",
+   "verificado": {
+    "identidade": false,
+    "fotos": true,
+    "escolaridade": true
+   },
+   "visto_ha_min": 8,
+   "tempo_resposta_min": 10,
+   "valor_referencia": "R$ 300/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-10-31",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-06",
+   "nome": "Duda (fictícia)",
+   "idade": 25,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Vila Planalto",
+   "area_aproximada": {
+    "lat": -20.4517,
+    "lng": -54.6294,
+    "raio_m": 1500
+   },
+   "plano": "Diamante",
+   "verificado": {
+    "identidade": true,
+    "fotos": false,
+    "escolaridade": false
+   },
+   "visto_ha_min": 8,
+   "tempo_resposta_min": 2,
+   "valor_referencia": "R$ 200/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": false,
+   "local_verificado_em": null,
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  },
+  {
+   "id": "perfil-07",
+   "nome": "Lara (fictícia)",
+   "idade": 32,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Santa Fé",
+   "area_aproximada": {
+    "lat": -20.4512,
+    "lng": -54.5943,
+    "raio_m": 1500
+   },
+   "plano": "Super Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 1,
+   "tempo_resposta_min": 30,
+   "valor_referencia": "R$ 200/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-04",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-08",
+   "nome": "Alice (fictícia)",
+   "idade": 36,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Monte Castelo",
+   "area_aproximada": {
+    "lat": -20.4396,
+    "lng": -54.6206,
+    "raio_m": 1500
+   },
+   "plano": "Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 45,
+   "tempo_resposta_min": 15,
+   "valor_referencia": "R$ 300/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-03",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  },
+  {
+   "id": "perfil-09",
+   "nome": "Vitória (fictícia)",
+   "idade": 32,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Coronel Antonino",
+   "area_aproximada": {
+    "lat": -20.4196,
+    "lng": -54.6086,
+    "raio_m": 1500
+   },
+   "plano": "Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": false,
+    "escolaridade": true
+   },
+   "visto_ha_min": 15,
+   "tempo_resposta_min": 2,
+   "valor_referencia": "R$ 250/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": false,
+   "local_verificado_em": null,
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-10",
+   "nome": "Jade (fictícia)",
+   "idade": 37,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Aero Rancho",
+   "area_aproximada": {
+    "lat": -20.516,
+    "lng": -54.6453,
+    "raio_m": 1500
+   },
+   "plano": "Grátis 24h",
+   "verificado": {
+    "identidade": false,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 180,
+   "tempo_resposta_min": 10,
+   "valor_referencia": "R$ 150/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-11-01",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  },
+  {
+   "id": "perfil-11",
+   "nome": "Cris (fictícia)",
+   "idade": 24,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Centro",
+   "area_aproximada": {
+    "lat": -20.4627,
+    "lng": -54.6186,
+    "raio_m": 1500
+   },
+   "plano": "Diamante",
+   "verificado": {
+    "identidade": true,
+    "fotos": true,
+    "escolaridade": false
+   },
+   "visto_ha_min": 45,
+   "tempo_resposta_min": 5,
+   "valor_referencia": "R$ 300/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-a-foto1.jpg",
+    "assets/img/modelo-a-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": true,
+   "local_verificado_em": "2026-10-31",
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    }
+   ]
+  },
+  {
+   "id": "perfil-12",
+   "nome": "Rafa (fictícia)",
+   "idade": 34,
+   "cidade": "Campo Grande",
+   "uf": "MS",
+   "bairro": "Jardim dos Estados",
+   "area_aproximada": {
+    "lat": -20.4597,
+    "lng": -54.5977,
+    "raio_m": 1500
+   },
+   "plano": "Super Top",
+   "verificado": {
+    "identidade": true,
+    "fotos": false,
+    "escolaridade": false
+   },
+   "visto_ha_min": 45,
+   "tempo_resposta_min": 10,
+   "valor_referencia": "R$ 250/h",
+   "bio": "Perfil FICTÍCIO para demonstração do protótipo. Atendimento com respeito, combinado previamente.",
+   "fotos": [
+    "assets/img/modelo-b-foto1.jpg",
+    "assets/img/modelo-b-foto2.jpg"
+   ],
+   "fotos_exclusivas": 4,
+   "verif_corpo": false,
+   "local_verificado_em": null,
+   "videos": [
+    {
+     "titulo": "Vídeo 1 (placeholder)",
+     "src": null,
+     "duracao": "0:15"
+    },
+    {
+     "titulo": "Vídeo 2 (placeholder)",
+     "src": null,
+     "duracao": "0:25"
+    },
+    {
+     "titulo": "Vídeo 3 (placeholder)",
+     "src": null,
+     "duracao": "0:35"
+    }
+   ]
+  }
+ ]
+}
