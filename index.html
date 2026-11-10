@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow"><meta name="rating" content="adult">
+<meta name="description" content="Catálogo de classificados adultos 18+ em Campo Grande/MS. Anunciantes independentes, navegação gratuita. A ConectaOJob não é agência."><link rel="canonical" href="https://conectajob.com.br/"><meta property="og:locale" content="pt_BR"><meta property="og:type" content="website"><meta property="og:site_name" content="ConectaOJob"><meta property="og:title" content="Catálogo Campo Grande · ConectaOJob"><meta property="og:description" content="Catálogo de classificados adultos 18+ em Campo Grande/MS. Anunciantes independentes, navegação gratuita. A ConectaOJob não é agência."><meta property="og:url" content="https://conectajob.com.br/"><meta property="og:image" content="https://conectajob.com.br/assets/img/logo-conectaojob.png"><meta property="og:image:alt" content="Logotipo da ConectaOJob"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Catálogo Campo Grande · ConectaOJob"><meta name="twitter:description" content="Catálogo de classificados adultos 18+ em Campo Grande/MS. Anunciantes independentes, navegação gratuita. A ConectaOJob não é agência."><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ConectaOJob","alternateName":"ConectaJob","url":"https://conectajob.com.br","logo":"https://conectajob.com.br/assets/img/logo-conectaojob.png","description":"Plataforma de classificados adultos para anunciantes independentes maiores de 18 anos, com foco em Mato Grosso do Sul.","areaServed":{"@type":"AdministrativeArea","name":"Mato Grosso do Sul","containedInPlace":{"@type":"Country","name":"Brasil"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"ConectaOJob","alternateName":"ConectaJob","url":"https://conectajob.com.br","inLanguage":"pt-BR","publisher":{"@type":"Organization","name":"ConectaOJob"}}</script>
 <title>Catálogo Campo Grande · ConectaOJob</title><link rel="stylesheet" href="assets/style.css">
 <script src="assets/app.js"></script></head>
 <body data-base="">
-<header class="top"><div class="wrap"><a class="logo" href="index.html">Conecta<span class="o">O</span><span class="j">J</span>ob</a>
-<nav><a href="index.html">Catálogo</a><a href="planos.html">Planos</a><a href="educacao.html">Educação</a><a href="psicologia.html">Psicologia <span class="badge soon">Em breve</span></a><a href="blog/index.html">Blog</a><a href="compliance.html">Compliance</a></nav></div></header>
+<header class="top"><div class="wrap"><a class="logo" href="index.html" aria-label="ConectaOJob, página inicial">Conecta<span class="o">O</span><span class="j">J</span>ob</a>
+<nav><a href="index.html">Catálogo</a><a href="ms/index.html">Cidades</a><a href="planos.html">Planos</a><a href="educacao.html">Educação</a><a href="psicologia.html">Psicologia <span class="badge soon">Em breve</span></a><a href="blog/index.html">Blog</a><a href="compliance.html">Compliance</a></nav></div></header>
 <main class="wrap">
 <section class="hero"><p class="slogan">Diga sim ao job</p><h1>Campo Grande em um só lugar.</h1>
 <p>Perfis verificados, quem está online agora e quem responde rápido. Navegue grátis.</p>
-<p><a class="btn" href="#catalogo">Explorar Campo Grande</a> <a class="btn ghost" href="planos.html">Anunciar agora</a></p></section>
+<p><a class="btn" href="#catalogo">Explorar Campo Grande</a> <a class="btn ghost" href="planos.html">Anunciar agora</a></p><p class="meta">Há também <a href="ms/index.html">páginas por cidade de Mato Grosso do Sul</a>.</p></section>
 <section id="catalogo"><h2>Catálogo por cidade</h2>
-<div class="filters"><select id="cidade" aria-label="Cidade"></select><select id="bairro" aria-label="Bairro"><option value="">Todos os bairros</option></select>
-<label><input type="checkbox" id="soVerif"> Só verificados</label>
-<div class="lockwrap"><div class="lock"><input placeholder="Busca avançada: idade, valor, tempo de resposta…" size="34"></div><div class="lockbtn" onclick="openPaywall()">🔒 Busca avançada · Premium</div></div></div>
-<p class="note">Todos os perfis exibidos são <b>fictícios</b> (dados de demonstração em data/anuncios.json). Imagens de teste com marca d'água.</p>
+<div class="fpanel" id="filtros" role="search" aria-label="Filtros do catálogo">
+<div class="row"><select id="cidade" aria-label="Cidade"></select><select id="bairro" aria-label="Bairro"><option value="">Todos os bairros</option></select>
+<select id="servico" aria-label="Serviço"><option value="">Todos os serviços</option></select>
+<select id="preco" aria-label="Faixa de preço"><option value="">Qualquer valor</option><option value="0-150">Até R$ 150</option><option value="151-250">R$ 151 a R$ 250</option><option value="251-99999">Acima de R$ 250</option></select>
+<select id="idade" aria-label="Faixa de idade"><option value="">Qualquer idade (18+)</option><option value="21-30">21 a 30 anos</option><option value="31-40">31 a 40 anos</option><option value="41-200">Acima de 40 anos</option></select></div>
+<div class="row">
+<label class="chip"><input type="checkbox" id="fPres"> 🏠 Presencial</label>
+<label class="chip"><input type="checkbox" id="fVirt"> 💻 Atendimento virtual</label>
+<label class="chip"><input type="checkbox" id="fLocal"> 🔑 Local próprio</label>
+<label class="chip"><input type="checkbox" id="soVerif"> ✔ Verificados</label>
+<label class="chip"><input type="checkbox" id="fNovo"> ✨ Novidades</label>
+<label class="chip"><input type="checkbox" id="fOnline"> ● Online agora</label>
+<label class="chip"><input type="checkbox" id="fPerto"> 📍 Perto de mim</label></div>
+<div class="row"><span class="fcount" id="fcount"></span><button class="linkbtn" id="limpar" type="button">Limpar filtros</button>
+<div class="lockwrap"><div class="lock"><input placeholder="Busca por palavra-chave e tempo de resposta…" size="34" aria-label="Busca Premium"></div><div class="lockbtn" onclick="openPaywall()">🔒 Busca por texto · Premium</div></div></div>
+<p class="meta" id="geoMsg" hidden></p></div>
+<p class="note">Todos os perfis exibidos são <b>fictícios</b> e de pessoas adultas (dados de demonstração em data/anuncios.json). Imagens de teste com marca d'água. Valores são apenas referência.</p>
 <div class="grid" id="lista"></div></section>
 <section><h2>Por que a ConectaOJob</h2><ul>
 <li><b>Selos de verificação:</b> identidade, fotos e escolaridade conferidas.</li><li><b>Última vez visto</b> e <b>tempo médio de resposta</b> em cada anúncio.</li>
@@ -25,16 +40,33 @@
 <p><a class="btn" href="planos.html#premium">Ver planos Premium</a></p><p><button class="btn ghost" onclick="closePaywall()">Agora não</button></p></div></div>
 <footer><div class="wrap">
 <p><b>Site exclusivo para maiores de 18 anos.</b> A ConectaOJob é uma plataforma de anúncios classificados. Ela não agencia, não intermedeia e não se responsabiliza pelos serviços anunciados, que são de responsabilidade exclusiva de cada anunciante. É proibido qualquer conteúdo envolvendo menores de 18 anos, exploração sexual ou tráfico de pessoas: denuncie pelo botão "Denunciar", pelo <b>Disque 100</b> (gratuito, anônimo, 24h) ou na <b>SaferNet</b> em <a href="https://new.safernet.org.br/denuncie" rel="noopener">denuncie.org.br</a>. Polícia: 190 · Central da Mulher: 180. Dados pessoais tratados conforme a LGPD (Lei 13.709/2018).</p>
-<p><a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a></p>
+<p><a href="termos.html">Termos de uso</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="#" onclick="openCookieBanner();return false">Preferências de cookies</a> · <a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a> · <a href="ms/index.html">Cidades de Mato Grosso do Sul</a></p>
 <p class="credit">Proposta de Oliveira Airwin<br>© 2026 ConectaOJob · Todos os direitos reservados a TOH</p></div></footer>
 <script>
-(async()=>{const d=await loadAnuncios('');const cid=document.getElementById('cidade'),bai=document.getElementById('bairro'),sv=document.getElementById('soVerif'),L=document.getElementById('lista');
-d.cidades.forEach(c=>cid.insertAdjacentHTML('beforeend',`<option value="${c.nome}" ${c.ativa?'':'disabled'}>${c.nome}/${c.uf}${c.ativa?'':' (em breve)'}</option>`));
-[...new Set(d.anuncios.map(a=>a.bairro))].sort().forEach(b=>bai.insertAdjacentHTML('beforeend',`<option>${b}</option>`));
-const ord={"Diamante":0,"Super Top":1,"Top":2,"Grátis 24h":3};
-function render(){L.innerHTML='';d.anuncios.filter(a=>a.cidade===cid.value&&(!bai.value||a.bairro===bai.value)&&(!sv.checked||a.verificado.identidade)).sort((a,b)=>ord[a.plano]-ord[b.plano]).forEach(a=>{
-L.insertAdjacentHTML('beforeend',`<a class="card" href="perfil.html?id=${a.id}"><div class="ph" style="background-image:url('${a.fotos[0]}')"><span class="badge plan">${a.plano}</span></div><div class="body"><h3>${a.nome}, ${a.idade}</h3><div class="meta">${a.bairro} · ${vistoTxt(a.visto_ha_min)}</div><div class="meta">⏱ responde em ~${a.tempo_resposta_min} min</div>
-${a.verificado.identidade?'<span class="badge">✔ Identidade verificada</span>':'<span class="badge no">Verificação pendente</span>'}${a.verificado.fotos?'<span class="badge">✔ Fotos</span>':''}${a.verificado.escolaridade?'<span class="badge">🎓 Escolaridade</span>':''}</div></a>`);});}
-[cid,bai,sv].forEach(e=>e.onchange=render);render();})();
+(async()=>{const d=await loadAnuncios('');const $=id=>document.getElementById(id);const L=$('lista');
+d.cidades.forEach(c=>$('cidade').insertAdjacentHTML('beforeend',`<option value="${c.nome}" ${c.ativa?'':'disabled'}>${c.nome}/${c.uf}${c.ativa?'':' (em breve)'}</option>`));
+[...new Set(d.anuncios.map(a=>a.bairro))].sort().forEach(b=>$('bairro').insertAdjacentHTML('beforeend',`<option>${b}</option>`));
+[...new Set(d.anuncios.flatMap(a=>a.servicos||[]))].sort().forEach(s=>$('servico').insertAdjacentHTML('beforeend',`<option>${s}</option>`));
+const ord={"Diamante":0,"Super Top":1,"Top":2,"Grátis 24h":3};let geo=null;
+const rng=v=>v?v.split('-').map(Number):null;
+function km(a,b){const R=6371,r=x=>x*Math.PI/180,dl=r(b.lat-a.lat),dg=r(b.lng-a.lng);const h=Math.sin(dl/2)**2+Math.cos(r(a.lat))*Math.cos(r(b.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h));}
+function render(){const p=rng($('preco').value),i=rng($('idade').value),s=$('servico').value;
+let r=d.anuncios.filter(a=>a.cidade===$('cidade').value&&(!$('bairro').value||a.bairro===$('bairro').value)&&(!s||(a.servicos||[]).includes(s))
+&&(!p||(a.valor_a_partir>=p[0]&&a.valor_a_partir<=p[1]))&&(!i||(a.idade>=i[0]&&a.idade<=i[1]))&&a.idade>=18
+&&(!$('fPres').checked||a.atendimento.presencial)&&(!$('fVirt').checked||a.atendimento.virtual)&&(!$('fLocal').checked||a.local_proprio)
+&&(!$('soVerif').checked||a.verificado.identidade)&&(!$('fNovo').checked||a.novo)&&(!$('fOnline').checked||a.visto_ha_min<=5));
+r.forEach(a=>a._dist=geo?km(geo,a.area_aproximada):null);
+r.sort(geo?(a,b)=>a._dist-b._dist:(a,b)=>ord[a.plano]-ord[b.plano]);
+L.innerHTML=r.length?r.map(a=>cardHTML(a,'')).join(''):'<p class="note">Nenhum perfil com esses filtros. <button class="linkbtn" onclick="document.getElementById(\'limpar\').click()">Limpar filtros</button></p>';
+$('fcount').textContent=r.length+(r.length===1?' perfil encontrado':' perfis encontrados');}
+$('fPerto').onchange=e=>{const m=$('geoMsg');if(!e.target.checked){geo=null;m.hidden=true;render();return;}
+if(!confirm('Usar sua localização para ordenar os perfis por distância?\n\nA localização é usada só no seu navegador, não é enviada nem salva.')){e.target.checked=false;return;}
+if(!navigator.geolocation){m.hidden=false;m.textContent='Seu navegador não permite localização.';e.target.checked=false;return;}
+m.hidden=false;m.textContent='Obtendo localização…';
+navigator.geolocation.getCurrentPosition(p=>{geo={lat:p.coords.latitude,lng:p.coords.longitude};m.textContent='Ordenado por distância aproximada (até o centro da região de cada perfil).';render();},
+()=>{e.target.checked=false;m.textContent='Localização não autorizada. Mostrando a ordem padrão.';},{timeout:10000,maximumAge:600000});};
+$('limpar').onclick=()=>{document.querySelectorAll('#filtros select').forEach(s=>{if(s.id!=='cidade')s.value='';});document.querySelectorAll('#filtros input[type=checkbox]').forEach(c=>c.checked=false);geo=null;$('geoMsg').hidden=true;render();};
+document.querySelectorAll('#filtros select, #filtros input[type=checkbox]:not(#fPerto)').forEach(e=>e.onchange=render);
+const q=new URLSearchParams(location.search);if(q.get('virtual')==='1')$('fVirt').checked=true;render();})();
 </script>
 </body></html>
