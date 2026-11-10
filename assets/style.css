@@ -10,7 +10,7 @@ nav a{color:#ddd;text-decoration:none;margin-left:12px;font-size:14px}nav a:hove
 .btn{display:inline-block;background:var(--pink);color:#fff;border:0;border-radius:999px;padding:10px 20px;font-weight:700;text-decoration:none;cursor:pointer;font-size:15px}
 .btn.ghost{background:transparent;border:2px solid var(--pink);color:var(--pink)}
 .hero{padding:40px 0 24px;text-align:center}.hero h1{font-size:clamp(28px,6vw,48px);margin:.2em 0}.slogan{color:var(--pink);font-style:italic;text-transform:uppercase;letter-spacing:3px;font-weight:800}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;text-decoration:none;color:inherit;display:block}
 .card .ph{aspect-ratio:3/4;background:#222 center/cover;position:relative}
 .card .body{padding:12px}.card h3{margin:0 0 4px;font-size:18px}
@@ -44,3 +44,23 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0;font-size
 .vtile .play{width:44px;height:44px;border-radius:50%;background:var(--pink);color:#fff;display:flex;align-items:center;justify-content:center;font-size:18px}.vtile small{position:absolute;bottom:4px;right:6px;color:#ccc;font-size:11px}
 @media(min-width:760px){.media{grid-template-columns:2fr 1fr}.vcol{grid-template-columns:1fr}}
 @media(min-width:760px){.vcol{grid-template-columns:repeat(2,1fr)}.sqgrid.blur{grid-template-columns:repeat(4,1fr)}}
+
+.card.invite{cursor:default}
+.card .ph.invite-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;text-align:center;background:linear-gradient(160deg,#2a2033 0%,#17111f 55%,#3a1540 100%);border:0}
+.card .ph.invite-ph .invite-title{font-size:1.35rem;font-weight:800;color:#fff;line-height:1.2}
+.card .ph.invite-ph .invite-sub{font-size:1.05rem;font-weight:700;color:#ff6fa3}
+.card .ph.invite-ph .invite-meta{font-size:.85rem;color:#a99bb8;margin-top:6px}
+.card .ph.invite-ph .invite-kind{font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:#d8cde3;opacity:.85}
+@media(min-width:720px){.grid{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}.card .ph.invite-ph .invite-title{font-size:1.55rem}}
+
+.badge.soon{background:#3a2a00;color:#ffd166;margin-left:4px;vertical-align:middle}
+nav a .badge.soon{font-size:10px;padding:1px 6px;font-weight:700}
+.coming-soon{text-align:center;padding:48px 20px;background:var(--card);border:1px solid var(--line);border-radius:18px;margin:24px 0}
+.coming-soon .stamp{display:inline-block;background:var(--pink);color:#fff;font-weight:900;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;border-radius:999px;font-size:14px;margin-bottom:16px}
+.coming-soon h2{border:0;padding:0;margin:0 0 8px}
+.coming-soon p{color:var(--muted);max-width:480px;margin:0 auto}
+
+.cat-title{border-left:4px solid var(--pink);padding-left:10px;margin:28px 0 14px;font-size:1.15rem}
+#cuidado-e-bem-estar .plan.hl{margin:20px 0 28px}
+#cuidado-e-bem-estar .plan.hl .grid{margin-top:14px}
+#cuidado-e-bem-estar .card .btn{margin-top:10px}
