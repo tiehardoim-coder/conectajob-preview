@@ -6,13 +6,51 @@
 <body data-base="">
 <header class="top"><div class="wrap"><a class="logo" href="index.html">Conecta<span class="o">O</span><span class="j">J</span>ob</a>
 <nav><a href="index.html">Catálogo</a><a href="planos.html">Planos</a><a href="educacao.html">Educação</a><a href="psicologia.html">Psicologia <span class="badge soon">Em breve</span></a><a href="blog/index.html">Blog</a><a href="compliance.html">Compliance</a></nav></div></header>
-<main class="wrap"><section class="hero"><h1>Planos para anunciantes</h1><p>Mais visibilidade, menos custo. Até metade do preço dos grandes portais.</p></section>
+<main class="wrap"><section class="hero"><h1>Planos para anunciantes</h1><p>Pagamento avulso, a partir de <b>R$ 5/dia</b> ou <b>R$ 34/semana</b>. Sem assinatura recorrente: você paga só o período que escolher.</p></section>
 <section><div class="plan hl" style="text-align:center"><h2 style="border:0">🎁 Primeiro cadastro: 24 horas grátis</h2><p>Toda anunciante nova e aprovada na verificação ganha 24h de destaque (equivalente ao Top). Vale uma vez por pessoa verificada. Ao expirar, o perfil fica oculto até a contratação de um plano.</p></div></section>
-<section><h2>Planos pagos</h2><div class="plans"><div class="plan"><h3>Top</h3><div class="price">R$ 4,83<small style="font-size:14px">/dia</small></div><p class="meta">preço base</p><p>No cartão recorrente: <b>R$ 4,03/dia</b> <span class="illus">ILUSTRATIVO</span></p><button class="btn" onclick="alert('Protótipo: pagamento ainda não implementado.')">Assinar Top</button></div><div class="plan hl"><h3>Super Top</h3><div class="price">R$ 6,33<small style="font-size:14px">/dia</small></div><p class="meta">preço base</p><p>No cartão recorrente: <b>R$ 5,28/dia</b> <span class="illus">ILUSTRATIVO</span></p><button class="btn" onclick="alert('Protótipo: pagamento ainda não implementado.')">Assinar Super Top</button></div><div class="plan"><h3>Diamante</h3><div class="price">R$ 8,25<small style="font-size:14px">/dia</small></div><p class="meta">preço base</p><p>No cartão recorrente: <b>R$ 6,88/dia</b> <span class="illus">ILUSTRATIVO</span></p><button class="btn" onclick="alert('Protótipo: pagamento ainda não implementado.')">Assinar Diamante</button></div></div></section>
-<section><h2>Cartão recorrente × PIX avulso</h2><p><b>Cartão recorrente sai mais barato.</b> No PIX avulso o valor é maior. Assine no cartão e economize todo mês.</p>
-<p class="note"><span class="illus">ILUSTRATIVO</span> Os preços base (Top, Super Top, Diamante) são os da proposta. Todos os demais valores desta tabela são <b>ilustrativos</b>, calculados com premissas ainda não validadas: PIX = base + 20%; cartão mensal = 25 dias cobrados a cada 30.</p>
-<div class="tbl"><table><thead><tr><th>Plano</th><th>Base/dia</th><th>PIX/dia*</th><th>PIX 7 dias*</th><th>PIX 30 dias*</th><th>Cartão mensal*</th><th>Cartão equiv./dia*</th><th>Economia 30d*</th></tr></thead><tbody><tr><td><b>Top</b></td><td>R$ 4,83</td><td>R$ 5,80</td><td>R$ 40,57</td><td>R$ 173,88</td><td><b>R$ 120,75</b></td><td>R$ 4,03</td><td>R$ 53,13</td></tr><tr><td><b>Super Top</b></td><td>R$ 6,33</td><td>R$ 7,60</td><td>R$ 53,17</td><td>R$ 227,88</td><td><b>R$ 158,25</b></td><td>R$ 5,28</td><td>R$ 69,63</td></tr><tr><td><b>Diamante</b></td><td>R$ 8,25</td><td>R$ 9,90</td><td>R$ 69,30</td><td>R$ 297,00</td><td><b>R$ 206,25</b></td><td>R$ 6,88</td><td>R$ 90,75</td></tr></tbody></table></div>
-<p class="meta">* valor ilustrativo.</p></section>
+<section id="planos-pagos"><h2>Planos pagos</h2>
+<p>Dois períodos, pagamento único no PIX ou no cartão. Nada é renovado automaticamente.</p>
+<div class="plans">
+<div class="plan"><h3>Diário</h3>
+<div class="price">R$ 5<small>/dia</small></div>
+<p class="meta">pagamento único pelo dia</p>
+<p>Para testar a plataforma ou anunciar em um dia específico.</p>
+<button class="btn" onclick="alert('Protótipo: pagamento ainda não implementado.')">Ativar Diário</button></div>
+<div class="plan hl"><p class="save">Mais vantajoso</p>
+<h3>Semanal</h3>
+<div class="price">R$ 34<small>/semana</small></div>
+<p class="meta">equivale a <b>R$ 4,86/dia</b></p>
+<p>Sete dias no Diário saem <b>R$ 35</b>. No Semanal você <b>economiza R$ 1</b>.</p>
+<button class="btn" onclick="alert('Protótipo: pagamento ainda não implementado.')">Ativar Semanal</button></div>
+</div></section>
+<section id="previa"><h2>Como seu card aparece em cada destaque</h2><p>Prévia com um perfil <b>fictício</b>. O catálogo usa três níveis visuais de destaque. Quanto maior o nível, mais evidência e melhor posição na lista.</p>
+<div class="preview-grid" id="prevgrid"></div>
+<p class="meta">Ordem no catálogo: Diamante → Super Top → Top. O perfil de 24h grátis aparece com o destaque do Top. O número de contato nunca aparece no card, só no perfil.</p></section>
+<section id="comparativo"><h2>Comparativo com outros sites</h2>
+<p>Custo equivalente em 30 dias dos planos de destaque publicados nos sites oficiais. Valores arredondados para o real. A ConectaOJob entra com o Diário (R$ 150) e o Semanal (R$ 145,71).</p>
+<p class="note">No Fatal Model, no Garota Com Local e no ClassiLocal o anúncio básico é gratuito; os valores abaixo são dos destaques pagos, opcionais. Na ConectaOJob, depois das 24h grátis o perfil fica oculto até a contratação de um plano. Os sites não oferecem o mesmo tipo de destaque — a tabela descreve o modelo de cada um.</p>
+<div class="compare" role="img" aria-label="Gráfico de barras com o custo equivalente em 30 dias: ConectaOJob Semanal R$ 145,71, ConectaOJob Diário R$ 150, Garota Com Local Destaque 1 R$ 150, Fatal Model Top R$ 289,80, Fatal Model Diamante R$ 379,80 e Fatal Model Super Top R$ 495.">
+<div class="crow us"><div class="clab"><span>ConectaOJob Semanal</span><b>R$ 145,71</b></div><div class="track"><span class="bar" style="width:29.4%"></span></div><span class="cmeta">R$ 4,86/dia</span></div>
+<div class="crow us"><div class="clab"><span>ConectaOJob Diário</span><b>R$ 150,00</b></div><div class="track"><span class="bar" style="width:30.3%"></span></div><span class="cmeta">R$ 5,00/dia</span></div>
+<div class="crow"><div class="clab"><span>Garota Com Local Destaque 1</span><b>R$ 150,00</b></div><div class="track"><span class="bar" style="width:30.3%"></span></div><span class="cmeta">R$ 5,00/dia · 30 dias</span></div>
+<div class="crow"><div class="clab"><span>Fatal Model Top</span><b>R$ 289,80</b></div><div class="track"><span class="bar" style="width:58.5%"></span></div><span class="cmeta">R$ 9,66/dia</span></div>
+<div class="crow"><div class="clab"><span>Fatal Model Diamante</span><b>R$ 379,80</b></div><div class="track"><span class="bar" style="width:76.7%"></span></div><span class="cmeta">R$ 12,66/dia</span></div>
+<div class="crow"><div class="clab"><span>Fatal Model Super Top</span><b>R$ 495,00</b></div><div class="track"><span class="bar" style="width:100%"></span></div><span class="cmeta">R$ 16,50/dia</span></div>
+</div>
+<div class="tbl"><table>
+<thead><tr><th>Site</th><th>Modelo de cobrança</th><th>Preço</th><th>Assinatura recorrente</th><th>Fonte</th></tr></thead>
+<tbody>
+<tr><td><b>ConectaOJob</b> — Diário</td><td>Pagamento avulso pelo período</td><td>R$ 5,00/dia</td><td>Não</td><td>Esta página</td></tr>
+<tr><td><b>ConectaOJob</b> — Semanal</td><td>Pagamento avulso pelo período</td><td>R$ 34,00/semana (R$ 4,86/dia)</td><td>Não</td><td>Esta página</td></tr>
+<tr><td><b>Fatal Model</b> — Top</td><td>Destaque opcional (anúncio básico grátis); avulso de 3, 7 ou 30 dias ou assinatura mensal</td><td>R$ 9,66/dia</td><td>Sim, na modalidade de assinatura mensal</td><td><a href="https://fatalmodel.com/planos" target="_blank" rel="noopener">fatalmodel.com/planos</a></td></tr>
+<tr><td><b>Fatal Model</b> — Diamante</td><td>Destaque opcional (anúncio básico grátis); avulso de 3, 7 ou 30 dias ou assinatura mensal</td><td>R$ 12,66/dia</td><td>Sim, na modalidade de assinatura mensal</td><td><a href="https://fatalmodel.com/planos" target="_blank" rel="noopener">fatalmodel.com/planos</a></td></tr>
+<tr><td><b>Fatal Model</b> — Super Top</td><td>Destaque opcional (anúncio básico grátis); avulso de 3, 7 ou 30 dias ou assinatura mensal</td><td>R$ 16,50/dia</td><td>Sim, na modalidade de assinatura mensal</td><td><a href="https://fatalmodel.com/planos" target="_blank" rel="noopener">fatalmodel.com/planos</a></td></tr>
+<tr><td><b>Garota Com Local</b> — Destaque 1</td><td>Destaque avulso (anúncio básico grátis); pacotes de 15 ou 30 dias</td><td>R$ 150,00 / 30 dias (R$ 100,00 / 15 dias)</td><td>Não (PIX, transferência ou cartão)</td><td><a href="https://garotacomlocal.com/anuncio-destaque/" target="_blank" rel="noopener">garotacomlocal.com/anuncio-destaque</a></td></tr>
+<tr><td><b>ClassiLocal</b></td><td>Até 10 anúncios ativos grátis; créditos avulsos só para destacar</td><td>A partir de R$ 7,90 na 1ª compra e R$ 14,90 nas seguintes</td><td>Não</td><td><a href="https://classilocal.com/classilocal-vs-fatalmodel" target="_blank" rel="noopener">classilocal.com/classilocal-vs-fatalmodel</a></td></tr>
+<tr><td><b>Skokka</b> — Top</td><td>Anúncio gratuito; destaque Top por 1, 3 ou 7 dias, com 3 ou 6 subidas/dia</td><td>Preço não público (aparece na contratação)</td><td>Não informado publicamente</td><td><a href="https://suporte.skokka.com/hc/pt-br/articles/29517764323869--Promo%C3%A7%C3%A3o-TOP-Seu-an%C3%BAncio-no-topo-da-lista" target="_blank" rel="noopener">Central de Ajuda Skokka</a></td></tr>
+</tbody></table></div>
+<p class="meta">Preços consultados em 10 de novembro de 2026 nos sites oficiais; podem mudar. O equivalente de 30 dias do Fatal Model usa a diária publicada (diária × 30). O do Semanal da ConectaOJob é R$ 34 × 30/7. Fontes: <a href="https://fatalmodel.com/planos" target="_blank" rel="noopener">Fatal Model</a>, <a href="https://garotacomlocal.com/anuncio-destaque/" target="_blank" rel="noopener">Garota Com Local</a>, <a href="https://classilocal.com/classilocal-vs-fatalmodel" target="_blank" rel="noopener">ClassiLocal</a>, <a href="https://suporte.skokka.com/hc/pt-br/articles/29517764323869--Promo%C3%A7%C3%A3o-TOP-Seu-an%C3%BAncio-no-topo-da-lista" target="_blank" rel="noopener">Skokka</a>. PhotoAcompanhantes não publica tabela de preços. O Vivalocal encerrou as operações em janeiro de 2026.</p>
+</section>
 <section id="premium"><h2>Acesso Premium (para quem navega)</h2><p>Navegar no catálogo é <b>grátis</b>. O Premium libera <b>busca avançada</b> e <b>fotos exclusivas</b>. Primeira assinatura: <b>24h grátis</b>. Preço do Premium: <span class="illus">A DEFINIR</span></p>
 <p class="meta">Para comprar planos pagos, a maioridade é confirmada pelo meio de pagamento em nome próprio.</p></section>
 <section id="campanhas"><h2>Página própria e campanhas semanais</h2><p><b>Sua página. Seu link. Seus clientes.</b> Cada anunciante ganha uma página em <code>/acesso/seunome</code> para colocar na bio do Instagram. Pacotes semanais de tráfego pago com relatório de cliques e visitas (referência R$ 150/semana <span class="illus">ILUSTRATIVO</span>).</p>
@@ -27,6 +65,9 @@
 <p><a class="btn" href="planos.html#premium">Ver planos Premium</a></p><p><button class="btn ghost" onclick="closePaywall()">Agora não</button></p></div></div>
 <footer><div class="wrap">
 <p><b>Site exclusivo para maiores de 18 anos.</b> A ConectaOJob é uma plataforma de anúncios classificados. Ela não agencia, não intermedeia e não se responsabiliza pelos serviços anunciados, que são de responsabilidade exclusiva de cada anunciante. É proibido qualquer conteúdo envolvendo menores de 18 anos, exploração sexual ou tráfico de pessoas: denuncie pelo botão "Denunciar", pelo <b>Disque 100</b> (gratuito, anônimo, 24h) ou na <b>SaferNet</b> em <a href="https://new.safernet.org.br/denuncie" rel="noopener">denuncie.org.br</a>. Polícia: 190 · Central da Mulher: 180. Dados pessoais tratados conforme a LGPD (Lei 13.709/2018).</p>
-<p><a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a></p>
-<p class="credit">Proposta de Oliveira Airwin<br>© 2026 ConectaOJob · Todos os direitos reservados a TOH</p></div></footer>
+<p><a href="termos.html">Termos de uso</a> · <a href="privacidade.html">Política de privacidade</a> · <a href="#" onclick="openCookieBanner();return false">Preferências de cookies</a> · <a href="compliance.html">Compliance</a> · <a href="codigo-de-conduta.html">Código de conduta</a> · <a href="blog/index.html">Blog</a></p>
+<p class="credit">Proposta de Oliveira Airwin<br>© 2026 ConectaOJob · Todos os direitos reservados a TOH</p></div></footer><script>
+(async()=>{const d=await loadAnuncios('');const base=d.anuncios[0];const desc={'Top':'Borda rosa e selo do plano.','Super Top':'Borda rosa forte, acima do Top na lista.','Diamante':'Borda brilhante, selo 💎 e topo da lista.'};
+document.getElementById('prevgrid').innerHTML=['Top','Super Top','Diamante'].map(p=>`<div><p class="cap">${p}</p>${cardHTML(Object.assign({},base,{plano:p,novo:false}),'',{preview:true})}<p class="meta" style="text-align:center">${desc[p]}</p></div>`).join('');})();
+</script>
 </body></html>

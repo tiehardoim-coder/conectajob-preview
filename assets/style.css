@@ -64,3 +64,65 @@ nav a .badge.soon{font-size:10px;padding:1px 6px;font-weight:700}
 #cuidado-e-bem-estar .plan.hl{margin:20px 0 28px}
 #cuidado-e-bem-estar .plan.hl .grid{margin-top:14px}
 #cuidado-e-bem-estar .card .btn{margin-top:10px}
+
+/* ---- Cards por plano ---- */
+.card.ad .price-from{color:var(--muted);font-size:14px;margin:2px 0}.card.ad .price-from b{color:var(--pink);font-size:18px}
+.card.ad .short{margin:4px 0 6px;font-size:14px;color:#ddd}
+.badge.mode{background:#26161d;color:#ffb3c9}.badge.new{background:#ffd166;color:#111;position:absolute;top:8px;right:8px;font-weight:800}
+.card.p-top{border-color:#5a2a3a}
+.card.p-supertop{border:2px solid var(--pink)}.card.p-supertop .badge.plan{background:var(--pink)}
+.card.p-diamante{border:2px solid transparent;background:linear-gradient(var(--card),var(--card)) padding-box,linear-gradient(135deg,#ff2d6a,#ffd1e0,#ff2d6a) border-box;box-shadow:0 0 18px rgba(255,45,106,.35)}
+.card.p-diamante .badge.plan{background:linear-gradient(135deg,#ff2d6a,#b3124a);box-shadow:0 0 10px #ff2d6a}.card.p-diamante .badge.plan::before{content:"💎 "}
+.card.p-free{opacity:.92}.card.p-free .badge.plan{background:#333;color:#ddd}
+/* ---- Filtros ---- */
+.fpanel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px;margin:16px 0}
+.fpanel .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.chip{display:inline-flex;align-items:center;gap:6px;background:#1a1a1a;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px;cursor:pointer;user-select:none}
+.chip input{accent-color:var(--pink);padding:0}.chip:has(input:checked){border-color:var(--pink);color:#fff;background:#2a1019}
+.fcount{font-size:14px;color:var(--muted)}.linkbtn{background:none;border:0;color:var(--pink);cursor:pointer;font-size:14px;text-decoration:underline}
+/* ---- Perfil ---- */
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:20px 0 0;overflow-x:auto}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:10px 14px;font-size:15px;font-weight:700;cursor:pointer;white-space:nowrap}
+.tabs button[aria-selected=true]{color:#fff;border-bottom-color:var(--pink)}
+.tabpanel{padding:16px 0}.tabpanel[hidden]{display:none}
+.mode-flags{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}.mflag{border:1px solid var(--line);border-radius:12px;padding:8px 12px;font-weight:700;font-size:14px}
+.mflag.on{border-color:var(--pink);background:#2a1019}.mflag.off{opacity:.45;text-decoration:line-through}
+.prices td:last-child{font-weight:700;color:var(--pink)}.prices td.na{color:#666;font-weight:400}
+.svc{display:flex;flex-wrap:wrap;gap:6px;padding:0;list-style:none}.svc li{background:#1a1a1a;border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:14px}
+.review{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:10px}.stars{color:#ffd166}
+.safety{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.contactbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(13,13,13,.97);border-top:2px solid var(--pink);padding:10px 16px}
+.contactbar .in{max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.contactbar .warn{font-size:12px;color:var(--muted);flex:1;min-width:220px;margin:0}
+.btn.wa{background:#25d366;color:#08210f}
+body.has-contactbar footer{padding-bottom:140px}
+/* ---- Planos: prévia ---- */
+.preview-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}.preview-grid .card .ph{aspect-ratio:4/3}
+.preview-grid .cap{text-align:center;font-weight:800;margin:8px 0 4px;color:var(--pink)}
+/* ---- Cookies ---- */
+.cookiebar{position:fixed;left:12px;right:12px;bottom:12px;z-index:90;max-width:760px;margin:0 auto;background:#151515;border:2px solid var(--pink);border-radius:16px;padding:14px 16px;box-shadow:0 8px 30px rgba(0,0,0,.6)}
+.cookiebar p{margin:0 0 10px;font-size:14px}.cb-actions{display:flex;gap:8px;justify-content:flex-end}
+body.has-contactbar .cookiebar{bottom:96px}
+/* .badge.plan também casava com .plan (card de plano): reseta padding/borda */
+.badge.plan{padding:2px 10px;display:inline-block;border:0;border-radius:999px;font-weight:800}
+h1 .badge.plan{vertical-align:middle;font-size:14px}
+
+/* ---- Planos: selo e comparativo ---- */
+.plan .price small{font-size:14px;font-weight:700;color:var(--muted);margin-left:4px}
+.plan .save{display:inline-block;background:var(--pink);color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px;margin:0 0 10px}
+.compare{display:flex;flex-direction:column;gap:12px;margin:18px 0 24px}
+.crow{display:grid;grid-template-columns:1fr;gap:4px}
+.clab{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13px;color:var(--muted)}
+.clab span{color:#ddd}.clab b{color:#fff;white-space:nowrap}
+.track{height:18px;background:#1a1a1a;border:1px solid var(--line);border-radius:999px;overflow:hidden}
+.bar{display:block;height:100%;border-radius:999px;background:#4a4a4a}
+.crow.us .bar{background:var(--pink)}
+.crow.us .clab span{color:#fff;font-weight:700}
+.cmeta{font-size:12px;color:var(--muted)}
+#comparativo .tbl table{font-size:13px}
+#comparativo .tbl th,#comparativo .tbl td{vertical-align:top}
+@media(min-width:700px){
+  .crow{grid-template-columns:minmax(160px,230px) 1fr minmax(110px,140px);align-items:center;gap:12px}
+  .clab{flex-direction:column;justify-content:center;gap:0}
+  .track{height:22px}
+}
